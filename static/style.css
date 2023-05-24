@@ -9,3 +9,20 @@ p{
     border-radius: 10px;
     background-color: white;
 }
+a{
+    height: 50px;
+    
+}
+.bgt{
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+img{
+    border-radius: 20%;
+    height: 40px;
+    width: 40px;
+}
+
+

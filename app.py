@@ -12,7 +12,9 @@ def analyze():
     if request.method == 'POST':
         rawtext = request.form['rawtext']
         lang = request.form['lang']
-        translated_text = summarizer(rawtext,lang)
+        targ = request.form['targ']
+        percent = request.form['percent']
+        translated_text = summarizer(rawtext,lang,targ,percent)
     return render_template('summarizer.html',translated_text=translated_text)    
 
 if __name__ == '__main__':

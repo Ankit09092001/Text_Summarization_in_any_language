@@ -14,7 +14,7 @@ Wikipedia was launched by Jimmy Wales and Larry Sanger on January 15, 2001. Sang
 # print(stopwords)
 
 
-def summarizer(rawdoc,sel_lang):
+def summarizer(rawdoc,sel_lang,targ_lang,percent):
     def translate_text(text, source_lang, target_lang):
         base_url = "https://api.mymemory.translated.net/get"
         results = []
@@ -82,7 +82,7 @@ def summarizer(rawdoc,sel_lang):
 
 
     # It decides the percentage of summarization, here it is 30% percent
-    select_len = int(len(sent_tokens) * 0.3)
+    select_len = int(len(sent_tokens) * float(percent))
 
 
     # List of summarized text that is done in order of higher frequency of sentences
@@ -96,7 +96,7 @@ def summarizer(rawdoc,sel_lang):
     
     text = summary
     source_lang = "en"
-    target_lang = sel_lang
+    target_lang = targ_lang
     translated_text = translate_text(text, source_lang, target_lang)
     
     return translated_text
