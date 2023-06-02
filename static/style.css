@@ -1,6 +1,15 @@
 body{
     background-color: #FFF9DE;
+    font-family: 'Roboto', sans-serif;
 }
+
+.navbar-transparent {
+    background-color: rgba(0, 0, 0, 0.121);
+  }
+
+  .navbar-transparent .navbar-brand {
+    color: white;
+  }
 
 p{
     margin: 10px;
@@ -8,6 +17,7 @@ p{
     border: black solid 3px;
     border-radius: 10px;
     background-color: white;
+    /* background-image: url("https://img.freepik.com/free-photo/global-connections_53876-89039.jpg?w=1060&t=st=1685644192~exp=1685644792~hmac=f60b759f86bd67ae9a7800193036a3be0c0d33ef24be220c65b55c38ef9f5f05"); */
 }
 a{
     height: 50px;
@@ -26,3 +36,29 @@ img{
 }
 
 
+.btn-primary {
+
+    transition-duration: 4ms;
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    background-color: grey;
+    /* padding-top: 10px; */
+  
+  }
+
+  .btn-primary:hover{
+
+    background-color: aqua;
+    color: black;
+    /* padding-top: 10px; */
+
+  }
+
+
+  .btn-secondary:hover{
+    background-color: aqua;
+    color:black;
+    /* padding-top: 10px; */
+  }

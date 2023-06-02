@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request
+# from flask import redirect, url_for
+
 from Summarization import summarizer
 
 app = Flask(__name__)
@@ -6,6 +8,12 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/destination')
+def destination():
+    return render_template('destination.html')
+
+
 
 @app.route('/analyze', methods=['GET','POST'])
 def analyze():
