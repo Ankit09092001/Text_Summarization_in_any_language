@@ -1,4 +1,4 @@
-TransVerity
+# TransVerity
 
 # Welcome Page
 ![image](https://github.com/Ankit09092001/Text_Summarization_in_any_language/assets/96561363/84e58bf2-d6c3-4312-9ca9-91f7b84ee770)
